@@ -17,11 +17,12 @@
 
     <main>
         <div id="app">
-            <input type="text" placeholder="Nuovo Todo">
-            <button value="add" name="aggiungi">Aggiungi</button>
+            <input type="text" placeholder="Nuovo Todo" v-model="nuovoTodo" @keyup.enter="addTodo">
+            <button @click="addTodo">Aggiungi</button>
             <div id="todo">
-                <ul>
-                    <li>Fare i compiti <i class="fas fa-trash"></i> </li>
+                <h1 v-if="todos == '' ">Non ci sono Todos</h1>
+                <ul v-else>
+                    <li v-for="(todo,index) in todos"> {{todo}} <i class="fas fa-trash" @click="remove(index)"></i> </li>
                 </ul>
             </div>
         </div>
