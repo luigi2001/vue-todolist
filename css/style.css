@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main{
+    text-align: center;
+    padding: 20px;
+}
+
+header img{
+    width: 20%;
+}
+
+main input{
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+main button{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#todo{
+    width: 80%;
+    margin: 40px auto;
+    padding: 40px 30px;
+    height: 100px;
+    background-color: #F8F6F8;
+    border-radius: 15px;
+    text-align: left;
+}
+
+#todo ul{
+    list-style: none;
+}
+
+#todo li{
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#todo li i{
+    float: right;
+    cursor: pointer;
+}
+
+
+
+
